@@ -8,37 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selectedTab: Tab = .house
-    
-    init() {
-    }
-    
     var body: some View {
-        ZStack {
-            VStack {
-                TabView(selection: $selectedTab) {
-                    ForEach(Tab.allCases, id: \.rawValue) { tab in
-                        HStack {
-                            Image(systemName: tab.rawValue)
-                            Text("\(tab.rawValue.capitalized)")
-                                .bold()
-                                .animation(nil, value: selectedTab)
-                        }
-                        .tag(tab)
-                    }
-                }
-                      
-            }
-            VStack {
-                Spacer()
-                TabBarView(selectedTab: $selectedTab)
-            }
+        
+        
+        NavigationStack {
+            CustomTabView()
+                .navigationTitle("Dashboard")
+            
         }
-    }
-    
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
+        
     }
 }
+
+#Preview {
+    ContentView()
+}
+
+
