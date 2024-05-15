@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CustomTabView: View {
+    @State private var showSheet: Bool = false
     var body: some View {
         TabView {
             ChartView()
@@ -15,7 +16,7 @@ struct CustomTabView: View {
                     Image(systemName: "chart.bar.fill")
                     Text("Dashboard")
                 }
-            ChartView()
+            QuickAddView()
                 .tabItem {
                     Image(systemName: "plus.circle.fill")
                     Text("Quick Add")

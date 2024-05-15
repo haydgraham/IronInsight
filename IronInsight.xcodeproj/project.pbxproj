@@ -14,6 +14,8 @@
 		BC6715A02BEEE44600FB61BE /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC67159F2BEEE44600FB61BE /* ChartView.swift */; };
 		BC6715A42BEEEC2F00FB61BE /* BodyweightLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6715A32BEEEC2F00FB61BE /* BodyweightLog.swift */; };
 		BC8EFA1C2BF5363600432341 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EFA1B2BF5363600432341 /* CustomTabView.swift */; };
+		BC8EFA1E2BF5494C00432341 /* QuickAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EFA1D2BF5494C00432341 /* QuickAddView.swift */; };
+		BC8EFA202BF54C1700432341 /* AddSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EFA1F2BF54C1700432341 /* AddSetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		BC67159F2BEEE44600FB61BE /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		BC6715A32BEEEC2F00FB61BE /* BodyweightLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyweightLog.swift; sourceTree = "<group>"; };
 		BC8EFA1B2BF5363600432341 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		BC8EFA1D2BF5494C00432341 /* QuickAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAddView.swift; sourceTree = "<group>"; };
+		BC8EFA1F2BF54C1700432341 /* AddSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 			children = (
 				BC67159F2BEEE44600FB61BE /* ChartView.swift */,
 				BC8EFA1B2BF5363600432341 /* CustomTabView.swift */,
+				BC8EFA1D2BF5494C00432341 /* QuickAddView.swift */,
+				BC8EFA1F2BF54C1700432341 /* AddSetView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,8 +180,10 @@
 			files = (
 				BC6715912BEDC04F00FB61BE /* ContentView.swift in Sources */,
 				BC6715A42BEEEC2F00FB61BE /* BodyweightLog.swift in Sources */,
+				BC8EFA202BF54C1700432341 /* AddSetView.swift in Sources */,
 				BC8EFA1C2BF5363600432341 /* CustomTabView.swift in Sources */,
 				BC67158F2BEDC04F00FB61BE /* IronInsightApp.swift in Sources */,
+				BC8EFA1E2BF5494C00432341 /* QuickAddView.swift in Sources */,
 				BC6715A02BEEE44600FB61BE /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
