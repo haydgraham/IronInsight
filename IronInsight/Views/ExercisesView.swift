@@ -11,6 +11,7 @@ struct ExercisesView: View {
     var body: some View {
         VStack {
             Text("Exercises View")
+            Spacer()
         }
     }
 }

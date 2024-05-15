@@ -17,8 +17,8 @@
 		BC8EFA1E2BF5494C00432341 /* QuickAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EFA1D2BF5494C00432341 /* QuickAddView.swift */; };
 		BC8EFA242BF55FB400432341 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EFA232BF55FB400432341 /* DashboardView.swift */; };
 		BC8EFA262BF5604E00432341 /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EFA252BF5604E00432341 /* ExercisesView.swift */; };
-		BC8EFA282BF563F700432341 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EFA272BF563F600432341 /* HistoryView.swift */; };
 		BC8EFA2A2BF565E300432341 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EFA292BF565E300432341 /* ProfileView.swift */; };
+		BC8EFA2C2BF570DD00432341 /* LogBodyweightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EFA2B2BF570DD00432341 /* LogBodyweightView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +34,8 @@
 		BC8EFA1D2BF5494C00432341 /* QuickAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAddView.swift; sourceTree = "<group>"; };
 		BC8EFA232BF55FB400432341 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		BC8EFA252BF5604E00432341 /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
-		BC8EFA272BF563F600432341 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		BC8EFA292BF565E300432341 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		BC8EFA2B2BF570DD00432341 /* LogBodyweightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBodyweightView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +111,8 @@
 				BC8EFA1D2BF5494C00432341 /* QuickAddView.swift */,
 				BC8EFA232BF55FB400432341 /* DashboardView.swift */,
 				BC8EFA252BF5604E00432341 /* ExercisesView.swift */,
-				BC8EFA272BF563F600432341 /* HistoryView.swift */,
 				BC8EFA292BF565E300432341 /* ProfileView.swift */,
+				BC8EFA2B2BF570DD00432341 /* LogBodyweightView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,8 +202,8 @@
 				BC8EFA1C2BF5363600432341 /* CustomTabView.swift in Sources */,
 				BC8EFA262BF5604E00432341 /* ExercisesView.swift in Sources */,
 				BC67158F2BEDC04F00FB61BE /* IronInsightApp.swift in Sources */,
+				BC8EFA2C2BF570DD00432341 /* LogBodyweightView.swift in Sources */,
 				BC8EFA1E2BF5494C00432341 /* QuickAddView.swift in Sources */,
-				BC8EFA282BF563F700432341 /* HistoryView.swift in Sources */,
 				BC6715A02BEEE44600FB61BE /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
