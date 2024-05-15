@@ -16,15 +16,25 @@ struct CustomTabView: View {
                     Image(systemName: "chart.bar.fill")
                     Text("Dashboard")
                 }
+            HistoryView()
+                .tabItem {
+                    Image(systemName: "calendar")
+                    Text("History")
+                }
             QuickAddView()
                 .tabItem {
                     Image(systemName: "plus.circle.fill")
                     Text("Quick Add")
                 }
-            ChartView()
+            ExercisesView()
                 .tabItem {
                     Image(systemName: "dumbbell.fill")
                     Text("Exercises")
+                }
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person.crop.circle.fill")
+                    Text("Profile")
                 }
         }
     }

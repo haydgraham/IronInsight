@@ -9,10 +9,15 @@ import SwiftUI
 
 struct QuickAddView: View {
     var body: some View {
-        Text("Quick Add View")
+        VStack {
+            Text("Quick Add View")
+        }
     }
 }
 
-#Preview {
-    QuickAddView()
+
+struct QuickAddView_Previews: PreviewProvider {
+    static var previews: some View {
+        QuickAddView()
+    }
 }

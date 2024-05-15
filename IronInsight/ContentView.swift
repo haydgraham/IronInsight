@@ -9,11 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
-        
-            CustomTabView()
+            VStack {
+                CustomTabView()
+            }
+        }
     }
-}
+
+
+
 
 #Preview {
     ContentView()
