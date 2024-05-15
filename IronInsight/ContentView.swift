@@ -11,7 +11,6 @@ struct ContentView: View {
     @State private var selectedTab: Tab = .house
     
     init() {
-        UITabBar.appearance().isHidden = true
     }
     
     var body: some View {
@@ -32,7 +31,7 @@ struct ContentView: View {
             }
             VStack {
                 Spacer()
-                CustomTabBar(selectedTab: $selectedTab)
+                TabBarView(selectedTab: $selectedTab)
             }
         }
     }

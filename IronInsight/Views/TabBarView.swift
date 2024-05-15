@@ -15,7 +15,7 @@ enum Tab: String, CaseIterable {
     case gearshape
 }
 
-struct CustomTabBar: View {
+struct TabBarView: View {
     @Binding var selectedTab: Tab
     private var fillImage: String {
         selectedTab.rawValue + ".fill"
@@ -62,5 +62,5 @@ struct CustomTabBar: View {
 }
 
 #Preview {
-    CustomTabBar(selectedTab: .constant(.house))
+    TabBarView(selectedTab: .constant(.house))
 }

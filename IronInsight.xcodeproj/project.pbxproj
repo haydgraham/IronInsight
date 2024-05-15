@@ -11,7 +11,7 @@
 		BC6715912BEDC04F00FB61BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6715902BEDC04F00FB61BE /* ContentView.swift */; };
 		BC6715932BEDC05100FB61BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6715922BEDC05100FB61BE /* Assets.xcassets */; };
 		BC6715972BEDC05100FB61BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6715962BEDC05100FB61BE /* Preview Assets.xcassets */; };
-		BC67159E2BEEDA5A00FB61BE /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC67159D2BEEDA5A00FB61BE /* CustomTabBar.swift */; };
+		BC67159E2BEEDA5A00FB61BE /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC67159D2BEEDA5A00FB61BE /* TabBarView.swift */; };
 		BC6715A02BEEE44600FB61BE /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC67159F2BEEE44600FB61BE /* ChartView.swift */; };
 		BC6715A42BEEEC2F00FB61BE /* BodyweightLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6715A32BEEEC2F00FB61BE /* BodyweightLog.swift */; };
 /* End PBXBuildFile section */
@@ -23,7 +23,7 @@
 		BC6715922BEDC05100FB61BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC6715942BEDC05100FB61BE /* IronInsight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IronInsight.entitlements; sourceTree = "<group>"; };
 		BC6715962BEDC05100FB61BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BC67159D2BEEDA5A00FB61BE /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		BC67159D2BEEDA5A00FB61BE /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		BC67159F2BEEE44600FB61BE /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		BC6715A32BEEEC2F00FB61BE /* BodyweightLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyweightLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,14 +58,13 @@
 		BC67158D2BEDC04F00FB61BE /* IronInsight */ = {
 			isa = PBXGroup;
 			children = (
+				BCF1654F2BF442FB009D9259 /* Models */,
+				BCF1654E2BF4424D009D9259 /* Views */,
 				BC67158E2BEDC04F00FB61BE /* IronInsightApp.swift */,
 				BC6715902BEDC04F00FB61BE /* ContentView.swift */,
 				BC6715922BEDC05100FB61BE /* Assets.xcassets */,
 				BC6715942BEDC05100FB61BE /* IronInsight.entitlements */,
 				BC6715952BEDC05100FB61BE /* Preview Content */,
-				BC67159D2BEEDA5A00FB61BE /* CustomTabBar.swift */,
-				BC67159F2BEEE44600FB61BE /* ChartView.swift */,
-				BC6715A32BEEEC2F00FB61BE /* BodyweightLog.swift */,
 			);
 			path = IronInsight;
 			sourceTree = "<group>";
@@ -76,6 +75,23 @@
 				BC6715962BEDC05100FB61BE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BCF1654E2BF4424D009D9259 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC67159F2BEEE44600FB61BE /* ChartView.swift */,
+				BC67159D2BEEDA5A00FB61BE /* TabBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BCF1654F2BF442FB009D9259 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC6715A32BEEEC2F00FB61BE /* BodyweightLog.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC6715912BEDC04F00FB61BE /* ContentView.swift in Sources */,
-				BC67159E2BEEDA5A00FB61BE /* CustomTabBar.swift in Sources */,
+				BC67159E2BEEDA5A00FB61BE /* TabBarView.swift in Sources */,
 				BC6715A42BEEEC2F00FB61BE /* BodyweightLog.swift in Sources */,
 				BC67158F2BEDC04F00FB61BE /* IronInsightApp.swift in Sources */,
 				BC6715A02BEEE44600FB61BE /* ChartView.swift in Sources */,
