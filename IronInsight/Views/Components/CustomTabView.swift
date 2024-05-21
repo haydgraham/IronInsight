@@ -54,6 +54,7 @@ struct CustomTabView: View {
             .sheet(isPresented: $showQuickAddSheet) {
                 QuickAddView()
             }
+            
         }
     }
 }
