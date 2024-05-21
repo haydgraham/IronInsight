@@ -11,5 +11,6 @@ struct BodyweightLog: Identifiable {
     var id = UUID()
     var weight: Double
     var date: Date
+    
 }
 
