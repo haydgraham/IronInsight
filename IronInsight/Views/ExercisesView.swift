@@ -6,43 +6,44 @@
 //
 
 import SwiftUI
-
-struct Exercise: Identifiable {
-    let id = UUID()
-    let name: String
-    let description: String
-}
-
-let dummyExercises = [
-    Exercise(name: "Push Up", description: "An upper body exercise."),
-    Exercise(name: "Squat", description: "A lower body exercise."),
-    Exercise(name: "Pull Up", description: "An upper body exercise."),
-    Exercise(name: "Lunge", description: "A lower body exercise."),
-    Exercise(name: "Plank", description: "A core exercise.")
-]
+import SwiftData
 
 struct ExercisesView: View {
-    var exercises = dummyExercises
+    @Query var exercises: [Exercise]
+    @Environment(\.modelContext) var modelContext
+    
     
     var body: some View {
+        
         NavigationStack {
-            List(exercises) { exercise in
-                VStack(alignment: .leading) {
-                    Text(exercise.name)
-                        .font(.headline)
-                    Text(exercise.description)
-                        .font(.subheadline)
+            List {
+                ForEach(exercises) { exercise in
+                    NavigationLink(value: exercise) {
+                        VStack(alignment: .leading) {
+                            Text(exercise.name)
+                                .font(.headline)
+                        }
+                    }
                 }
-                .padding(.vertical, 4)
+                .onDelete(perform: deleteExercises)
             }
             .navigationTitle("Exercises")
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Add Exercise") {
-                        print("Pressed")
-                    }
-                }
+                Button("Add Exercise", systemImage: "plus", action : addSample)
             }
+
+        }
+    }
+    func addSample() {
+        let sampleExercise = Exercise(name: "Sample Exercise")
+        
+        modelContext.insert(sampleExercise)
+    }
+    
+    func deleteExercises(_ indexSet: IndexSet) {
+        for index in indexSet {
+            let exercise = exercises[index]
+            modelContext.delete(exercise)
         }
     }
 }

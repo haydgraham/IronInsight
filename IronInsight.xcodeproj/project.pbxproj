@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC3E8B622BFC2CA2008564D0 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3E8B612BFC2CA2008564D0 /* Exercise.swift */; };
 		BC67158F2BEDC04F00FB61BE /* IronInsightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC67158E2BEDC04F00FB61BE /* IronInsightApp.swift */; };
 		BC6715912BEDC04F00FB61BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6715902BEDC04F00FB61BE /* ContentView.swift */; };
 		BC6715932BEDC05100FB61BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6715922BEDC05100FB61BE /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC3E8B612BFC2CA2008564D0 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		BC67158B2BEDC04F00FB61BE /* IronInsight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IronInsight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC67158E2BEDC04F00FB61BE /* IronInsightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IronInsightApp.swift; sourceTree = "<group>"; };
 		BC6715902BEDC04F00FB61BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				BC6715A32BEEEC2F00FB61BE /* BodyweightLog.swift */,
+				BC3E8B612BFC2CA2008564D0 /* Exercise.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				BC6715A42BEEEC2F00FB61BE /* BodyweightLog.swift in Sources */,
 				BC8EFA1C2BF5363600432341 /* CustomTabView.swift in Sources */,
 				BC8EFA262BF5604E00432341 /* ExercisesView.swift in Sources */,
+				BC3E8B622BFC2CA2008564D0 /* Exercise.swift in Sources */,
 				BC67158F2BEDC04F00FB61BE /* IronInsightApp.swift in Sources */,
 				BC8EFA2C2BF570DD00432341 /* LogBodyweightView.swift in Sources */,
 				BC8EFA1E2BF5494C00432341 /* QuickAddView.swift in Sources */,

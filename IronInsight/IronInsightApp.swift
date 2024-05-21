@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct IronInsightApp: App {
@@ -13,5 +14,6 @@ struct IronInsightApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Exercise.self)
     }
 }
