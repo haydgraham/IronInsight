@@ -55,6 +55,7 @@ struct CustomTabView: View {
                 QuickAddView()
             }
             
+            
         }
     }
 }
