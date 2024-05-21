@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LogBodyweightView: View {
     var body: some View {
-        Text("Log Bodyweight View")
+        Text("blub")
     }
 }
 
