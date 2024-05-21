@@ -12,6 +12,7 @@ struct ExercisesView: View {
     @Query var exercises: [Exercise]
     @Environment(\.modelContext) var modelContext
     
+    @State private var showSheet: Bool = false
     
     var body: some View {
         
@@ -28,13 +29,22 @@ struct ExercisesView: View {
                 .onDelete(perform: deleteExercises)
             }
             .navigationTitle("Exercises")
+            .navigationDestination(for: Exercise.self, destination: EditExerciseView.init)
             .toolbar {
-                Button("Add Exercise", systemImage: "plus", action : addSample)
+                
+                Button("Add Exercise",
+                       systemImage: "plus",
+                       action: {showSheet.toggle()}
+                )
+                .sheet(isPresented: $showSheet, content: {
+                    CreateNewExerciseView()
+                })
+                
             }
-
+            
         }
     }
-    func addSample() {
+    func addExercise() {
         let sampleExercise = Exercise(name: "Sample Exercise")
         
         modelContext.insert(sampleExercise)
